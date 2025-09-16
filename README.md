@@ -57,5 +57,57 @@ To run this notebook, you will need to have the following libraries installed:
 
 You can install them using pip:
 
+
+# Multiple Linear Regression Model for Delivery Time Prediction
+
+This notebook demonstrates the process of building and evaluating a multiple linear regression model to predict delivery time based on the number of products and distance.
+
+## Dataset
+
+The dataset used in this notebook is `delivery.csv`. It contains the following columns:
+
+- `n.prod`: Number of products to be delivered.
+- `distance`: Distance to be covered for delivery.
+- `delTime`: Delivery time (target variable).
+
+## Notebook Structure
+
+1.  **Import Libraries**: Imports necessary libraries like pandas, numpy, matplotlib, and seaborn.
+2.  **Load Data**: Reads the `delivery.csv` file into a pandas DataFrame.
+3.  **Feature Engineering**:
+    - Provides basic data information (`.info()`) and descriptive statistics (`.describe()`).
+    - Visualizes the relationships between variables using a pairplot.
+4.  **Building Multiple Linear Model**:
+    - Instantiates and fits a `LinearRegression` model from scikit-learn using `n.prod` and `distance` as predictors and `delTime` as the target.
+    - Prints the intercept and coefficients of the model.
+5.  **Visualizing the Model**:
+    - Creates a 3D scatter plot of the data.
+    - Plots the regression plane on the 3D scatter plot to visualize the model's fit.
+6.  **Validating the Model**:
+    - Calculates and prints the R-squared value of the multiple linear regression model.
+7.  **Comparison between model r-squared based on number of predictors**:
+    - Compares the R-squared of the multiple linear regression model with a simple linear regression model using only `n.prod`.
+8.  **Computation of adjusted R-Squared**:
+    - Calculates and prints the adjusted R-squared value for the multiple linear regression model.
+9.  **Feature Engineering in Detail for Multiple Linear Regression**:
+    - Calculates and prints the correlation between the predictors (`n.prod` and `distance`).
+    - Calculates and prints the Variance Inflation Factor (VIF) for each predictor to assess multicollinearity.
+
+## How to Use
+
+1.  Ensure you have the `delivery.csv` file in the same directory as the notebook or provide the correct path.
+2.  Run the cells sequentially to execute the code and see the results.
+
+## Requirements
+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- statsmodels
+"""
+
 ```bash
 pip install pandas numpy matplotlib scikit-learn
+
