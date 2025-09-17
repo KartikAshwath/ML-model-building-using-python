@@ -1,4 +1,5 @@
 # ML-model-building-using-python
+
 # Simple Linear Regression: Manual and Scikit-Learn Implementation
 
 This notebook demonstrates how to build and evaluate a simple linear regression model using both a manual approach and the scikit-learn library in Python. The goal is to predict the time taken to repair a computer based on the number of units to be repaired.
@@ -107,6 +108,48 @@ The dataset used in this notebook is `delivery.csv`. It contains the following c
 - scikit-learn
 - statsmodels
 """
+
+
+# Logistic Regression Model for Coronary Heart Disease Prediction
+
+This notebook demonstrates the process of building a logistic regression model to predict the probability of coronary heart disease (CHD) based on age.
+
+## Dataset
+
+The dataset used in this demo is `chd_data.csv`, which contains two columns:
+- `age`: The age of the individual.
+- `chd`: A binary variable indicating the presence (1) or absence (0) of coronary heart disease.
+
+## Notebook Structure
+
+The notebook is organized into the following sections:
+
+1.  **Importing Libraries**: Imports necessary libraries for data manipulation, visualization, and model building.
+2.  **Read Data**: Reads the `chd_data.csv` file into a pandas DataFrame.
+3.  **Feature Engineering**: Visualizes the relationship between age and CHD to gain insights into the data.
+4.  **Building Logistic Regression Model**:
+    -   Splits the data into training and testing sets.
+    -   Builds a logistic regression model using the training data.
+    -   Prints the intercept and coefficients of the trained model.
+5.  **Prediction**: Demonstrates how to use the trained model to predict the probability of CHD and the final class for a new data point.
+6.  **Visualization**: Visualizes the predicted probabilities of CHD against age, along with the actual target values.
+
+## How to Run the Notebook
+
+1.  Make sure you have the required libraries installed (`numpy`, `pandas`, `matplotlib`, `sklearn`).
+2.  Download the `chd_data.csv` file and place it in the same directory as the notebook, or update the file path in the "Read data" section.
+3.  Run the cells sequentially.
+
+## Model Output
+
+The notebook will output the following:
+
+-   The head of the DataFrame.
+-   A scatter plot showing the relationship between age and CHD.
+-   The shapes of the training and testing sets.
+-   The intercept and coefficients of the logistic regression model.
+-   The predicted probabilities and class label for a new data point.
+-   A scatter plot visualizing the predicted probabilities and actual target values.
 
 ```bash
 pip install pandas numpy matplotlib scikit-learn
